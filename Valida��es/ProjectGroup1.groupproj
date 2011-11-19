@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{453FF6FF-E2B9-4F96-92CA-E6A4A28FDC1E}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="ValidaCampos.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Test\ValidaCamposTests.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="ValidaCampos">
+			<MSBuild Projects="ValidaCampos.dproj"/>
+		</Target>
+		<Target Name="ValidaCampos:Clean">
+			<MSBuild Targets="Clean" Projects="ValidaCampos.dproj"/>
+		</Target>
+		<Target Name="ValidaCampos:Make">
+			<MSBuild Targets="Make" Projects="ValidaCampos.dproj"/>
+		</Target>
+		<Target Name="ValidaCamposTests">
+			<MSBuild Projects="Test\ValidaCamposTests.dproj"/>
+		</Target>
+		<Target Name="ValidaCamposTests:Clean">
+			<MSBuild Targets="Clean" Projects="Test\ValidaCamposTests.dproj"/>
+		</Target>
+		<Target Name="ValidaCamposTests:Make">
+			<MSBuild Targets="Make" Projects="Test\ValidaCamposTests.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="ValidaCampos;ValidaCamposTests"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="ValidaCampos:Clean;ValidaCamposTests:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="ValidaCampos:Make;ValidaCamposTests:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

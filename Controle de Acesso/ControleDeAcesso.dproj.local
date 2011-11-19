@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/04/16 14:45:12.039.pas,D:\Meus documentos\RAD Studio\Projects\Unit2.pas=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntPerfilUsuario.pas</Transaction>
+    <Transaction>2011/04/16 14:45:32.699.pas,D:\Meus documentos\RAD Studio\Projects\Unit1.pas=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntFormularioPrincipal.pas</Transaction>
+    <Transaction>2011/04/16 14:45:32.699.dfm,D:\Meus documentos\RAD Studio\Projects\Unit1.dfm=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntFormularioPrincipal.dfm</Transaction>
+    <Transaction>2011/04/16 14:45:52.248.dproj,D:\Meus documentos\RAD Studio\Projects\Project1.dproj=D:\Meus documentos\Curso Delphi\Controle de Acesso\ControleDeAcesso.dproj</Transaction>
+    <Transaction>2011/04/16 15:21:24.351.pas,D:\Meus documentos\Curso Delphi\Controle de Acesso\Unit1.pas=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntAcao.pas</Transaction>
+    <Transaction>2011/04/16 15:45:02.665.pas,D:\Meus documentos\Curso Delphi\Controle de Acesso\Unit1.pas=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntAcaoPerfil.pas</Transaction>
+    <Transaction>2011/04/16 15:48:01.213.pas,D:\Meus documentos\Curso Delphi\Controle de Acesso\UntAcaoPerfil.pas=</Transaction>
+    <Transaction>2011/05/14 15:01:05.092.pas,D:\Meus documentos\Curso Delphi\Controle de Acesso\Unit1.pas=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntUsuario.pas</Transaction>
+    <Transaction>2011/06/11 14:16:55.484.pas,D:\Meus documentos\Curso Delphi\Controle de Acesso\Unit2.pas=D:\Meus documentos\Curso Delphi\Controle de Acesso\UIUntListaPerfis.pas</Transaction>
+    <Transaction>2011/06/11 14:16:55.484.dfm,D:\Meus documentos\Curso Delphi\Controle de Acesso\Unit2.dfm=D:\Meus documentos\Curso Delphi\Controle de Acesso\UIUntListaPerfis.dfm</Transaction>
+    <Transaction>2011/06/11 14:18:19.089.pas,D:\Meus documentos\Curso Delphi\Controle de Acesso\UIUntListaPerfis.pas=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntUIListaPerfis.pas</Transaction>
+    <Transaction>2011/06/11 14:18:19.089.dfm,D:\Meus documentos\Curso Delphi\Controle de Acesso\UIUntListaPerfis.dfm=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntUIListaPerfis.dfm</Transaction>
+    <Transaction>2011/06/11 15:48:54.312.pas,D:\Meus documentos\Curso Delphi\Controle de Acesso\Unit1.pas=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntDmDados.pas</Transaction>
+    <Transaction>2011/06/11 15:48:54.312.dfm,D:\Meus documentos\Curso Delphi\Controle de Acesso\Unit1.dfm=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntDmDados.dfm</Transaction>
+    <Transaction>2011/06/18 14:23:17.587.pas,D:\Meus documentos\Curso Delphi\Controle de Acesso\UntDmDados.pas=</Transaction>
+    <Transaction>2011/06/18 14:23:17.588.dfm,D:\Meus documentos\Curso Delphi\Controle de Acesso\UntDmDados.dfm=</Transaction>
+    <Transaction>2011/06/18 14:36:46.111.pas,D:\Meus documentos\Curso Delphi\Controle de Acesso\Unit1.pas=D:\Meus documentos\Curso Delphi\Controle de Acesso\UntAcessoDados.pas</Transaction>
+  </Transactions>
+</BorlandProject>

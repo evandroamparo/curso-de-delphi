@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2010/10/16 14:13:24.428.pas,D:\Meus documentos\RAD Studio\Projects\Unit1.pas=D:\Meus documentos\Curso Delphi\Multiplos\UntPrincipal.pas</Transaction>
+    <Transaction>2010/10/16 14:13:24.428.dfm,D:\Meus documentos\RAD Studio\Projects\Unit1.dfm=D:\Meus documentos\Curso Delphi\Multiplos\UntPrincipal.dfm</Transaction>
+    <Transaction>2010/10/16 14:13:40.116.dproj,D:\Meus documentos\RAD Studio\Projects\Project1.dproj=D:\Meus documentos\Curso Delphi\Multiplos\Multiplos.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

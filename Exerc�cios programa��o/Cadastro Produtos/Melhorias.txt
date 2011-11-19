@@ -1,0 +1,9 @@
+*Não permitir exclusão de um produto vendido (mensagem para o usuário)
+
+*Limpar o form de vendas a cada nova venda (quantidade e valor total)
+
+*Tratar valores no form de vendas
+
+*Deixar nome e descrição somente leitura na venda //Propriedade Read Only = true.
+
+Evento On show, colocar o setfocus.

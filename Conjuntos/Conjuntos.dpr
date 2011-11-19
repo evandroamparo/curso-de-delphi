@@ -1,0 +1,16 @@
+program Conjuntos;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1},
+  ExemploConjuntosEnumerados in 'ExemploConjuntosEnumerados.pas',
+  ExemploConjuntosNaoEnumerados in 'ExemploConjuntosNaoEnumerados.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

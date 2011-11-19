@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/01/29 14:56:45.381.pas,D:\Meus documentos\RAD Studio\Projects\Unit2.pas=D:\Meus documentos\Curso Delphi\Tipos Genéricos\UntVariantes.pas</Transaction>
+    <Transaction>2011/01/29 14:56:59.723.pas,D:\Meus documentos\RAD Studio\Projects\Unit1.pas=D:\Meus documentos\Curso Delphi\Tipos Genéricos\UntPrincipal.pas</Transaction>
+    <Transaction>2011/01/29 14:56:59.723.dfm,D:\Meus documentos\RAD Studio\Projects\Unit1.dfm=D:\Meus documentos\Curso Delphi\Tipos Genéricos\UntPrincipal.dfm</Transaction>
+    <Transaction>2011/01/29 14:57:51.215.dproj,D:\Meus documentos\RAD Studio\Projects\Project1.dproj=D:\Meus documentos\Curso Delphi\Tipos Genéricos\TiposGenericos.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
