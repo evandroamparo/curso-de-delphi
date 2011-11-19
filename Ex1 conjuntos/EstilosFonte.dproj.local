@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/02/03 20:36:24.529.pas,D:\Meus documentos\RAD Studio\Projects\Unit1.pas=C:\Users\Evandro\Desktop\Ex1 conjuntos\UIPrincipal.pas</Transaction>
+    <Transaction>2011/02/03 20:36:24.529.dfm,D:\Meus documentos\RAD Studio\Projects\Unit1.dfm=C:\Users\Evandro\Desktop\Ex1 conjuntos\UIPrincipal.dfm</Transaction>
+    <Transaction>2011/02/03 20:36:33.597.dproj,D:\Meus documentos\RAD Studio\Projects\Project1.dproj=C:\Users\Evandro\Desktop\Ex1 conjuntos\EstilosFonte.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

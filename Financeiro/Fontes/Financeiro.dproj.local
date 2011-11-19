@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/09/03 15:09:06.614.pas,C:\Users\Evandro\Documents\RAD Studio\Projects\Unit1.pas=Z:\Curso Delphi\Financeiro\Fontes\UFrmPrincipal.pas</Transaction>
+    <Transaction>2011/09/03 15:09:06.629.dfm,C:\Users\Evandro\Documents\RAD Studio\Projects\Unit1.dfm=Z:\Curso Delphi\Financeiro\Fontes\UFrmPrincipal.dfm</Transaction>
+    <Transaction>2011/09/03 15:09:15.238.dproj,C:\Users\Evandro\Documents\RAD Studio\Projects\Project1.dproj=Z:\Curso Delphi\Financeiro\Fontes\Financeiro.dproj</Transaction>
+    <Transaction>2011/09/03 15:10:08.279.pas,Z:\Curso Delphi\Financeiro\Fontes\Unit1.pas=Z:\Curso Delphi\Financeiro\Fontes\UPlanoContas.pas</Transaction>
+    <Transaction>2011/10/01 09:21:45.150.pas,C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Unit1.pas=C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Clientes\UClientes.pas</Transaction>
+    <Transaction>2011/10/01 11:28:12.400.pas,C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Unit1.pas=C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Fornecedores\UFornecedores.pas</Transaction>
+    <Transaction>2011/10/01 14:28:08.894.pas,Z:\Curso Delphi\Financeiro\Fontes\Unit1.pas=Z:\Curso Delphi\Financeiro\Fontes\Contas\UConta.pas</Transaction>
+    <Transaction>2011/10/01 14:42:08.534.pas,Z:\Curso Delphi\Financeiro\Fontes\Unit1.pas=Z:\Curso Delphi\Financeiro\Fontes\Contas\UContaPagar.pas</Transaction>
+    <Transaction>2011/10/01 14:45:04.943.pas,Z:\Curso Delphi\Financeiro\Fontes\Fornecedores\UFornecedores.pas=Z:\Curso Delphi\Financeiro\Fontes\Fornecedores\UFornecedor.pas</Transaction>
+    <Transaction>2011/10/01 14:47:06.909.pas,Z:\Curso Delphi\Financeiro\Fontes\Clientes\UClientes.pas=Z:\Curso Delphi\Financeiro\Fontes\Clientes\UCliente.pas</Transaction>
+    <Transaction>2011/10/04 20:08:59.222.pas,C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Unit1.pas=C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Contas\UContaReceber.pas</Transaction>
+    <Transaction>2011/10/06 18:21:19.051.pas,C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Unit1.pas=C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Movimentação\UMovimentacao.pas</Transaction>
+    <Transaction>2011/10/15 14:51:13.928.pas,Z:\Curso Delphi\Financeiro\Fontes\UPlanoContas.pas=Z:\Curso Delphi\Financeiro\Fontes\Plano Contas\UPlanoContas.pas</Transaction>
+    <Transaction>2011/10/15 14:51:38.097.pas,Z:\Curso Delphi\Financeiro\Fontes\UntAcessoDados.pas=Z:\Curso Delphi\Financeiro\Fontes\Acesso Dados\UntAcessoDados.pas</Transaction>
+    <Transaction>2011/10/15 14:59:39.278.pas,Z:\Curso Delphi\Financeiro\Fontes\Unit2.pas=Z:\Curso Delphi\Financeiro\Fontes\Plano Contas\UFrmConsultaPlanoContas.pas</Transaction>
+    <Transaction>2011/10/15 14:59:39.278.dfm,Z:\Curso Delphi\Financeiro\Fontes\Unit2.dfm=Z:\Curso Delphi\Financeiro\Fontes\Plano Contas\UFrmConsultaPlanoContas.dfm</Transaction>
+    <Transaction>2011/10/29 15:34:31.411.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit2.pas=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\UFrmCadastroPlanoContas.pas</Transaction>
+    <Transaction>2011/10/29 15:34:31.422.dfm,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit2.dfm=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\UFrmCadastroPlanoContas.dfm</Transaction>
+    <Transaction>2011/10/29 15:35:10.561.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\UFrmCadastroPlanoContas.pas=</Transaction>
+    <Transaction>2011/10/29 15:35:10.561.dfm,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\UFrmCadastroPlanoContas.dfm=</Transaction>
+    <Transaction>2011/11/12 14:22:43.190.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit1.pas=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Util\UConstantes.pas</Transaction>
+    <Transaction>2011/11/12 14:27:22.622.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit1.pas=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Util\UDBUtils.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/02/12 14:19:46.596.pas,D:\Meus documentos\RAD Studio\Projects\Unit2.pas=D:\Meus documentos\Curso Delphi\Concessionária\ClsCarro.pas</Transaction>
+    <Transaction>2011/02/12 14:20:03.581.pas,D:\Meus documentos\RAD Studio\Projects\Unit1.pas=D:\Meus documentos\Curso Delphi\Concessionária\UntPrincipal.pas</Transaction>
+    <Transaction>2011/02/12 14:20:03.581.dfm,D:\Meus documentos\RAD Studio\Projects\Unit1.dfm=D:\Meus documentos\Curso Delphi\Concessionária\UntPrincipal.dfm</Transaction>
+    <Transaction>2011/02/12 14:20:25.646.dproj,D:\Meus documentos\RAD Studio\Projects\Project1.dproj=D:\Meus documentos\Curso Delphi\Concessionária\Concessionaria.dproj</Transaction>
+    <Transaction>2011/02/12 15:05:08.502.pas,D:\Meus documentos\Curso Delphi\Concessionária\Unit1.pas=D:\Meus documentos\Curso Delphi\Concessionária\ClsFabricante.pas</Transaction>
+    <Transaction>2011/02/12 15:16:08.906.pas,D:\Meus documentos\Curso Delphi\Concessionária\Unit2.pas=D:\Meus documentos\Curso Delphi\Concessionária\UntUIFabricante.pas</Transaction>
+    <Transaction>2011/02/12 15:16:08.906.dfm,D:\Meus documentos\Curso Delphi\Concessionária\Unit2.dfm=D:\Meus documentos\Curso Delphi\Concessionária\UntUIFabricante.dfm</Transaction>
+    <Transaction>2011/02/12 15:19:00.356.pas,D:\Meus documentos\Curso Delphi\Concessionária\UntUIFabricante.pas=D:\Meus documentos\Curso Delphi\Concessionária\UntUIListaFabricantes.pas</Transaction>
+    <Transaction>2011/02/12 15:19:00.356.dfm,D:\Meus documentos\Curso Delphi\Concessionária\UntUIFabricante.dfm=D:\Meus documentos\Curso Delphi\Concessionária\UntUIListaFabricantes.dfm</Transaction>
+    <Transaction>2011/03/13 11:12:47.575.pas,C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Concessionária\Unit2.pas=C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Concessionária\UntUICarro.pas</Transaction>
+    <Transaction>2011/03/13 11:12:47.575.dfm,C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Concessionária\Unit2.dfm=C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Concessionária\UntUICarro.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

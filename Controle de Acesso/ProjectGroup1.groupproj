@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{F3D57E9F-FC31-41F5-A09F-B6072780D5C0}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="ControleDeAcesso.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="Test\ControleDeAcessoTests.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="ControleDeAcesso">
+			<MSBuild Projects="ControleDeAcesso.dproj"/>
+		</Target>
+		<Target Name="ControleDeAcesso:Clean">
+			<MSBuild Targets="Clean" Projects="ControleDeAcesso.dproj"/>
+		</Target>
+		<Target Name="ControleDeAcesso:Make">
+			<MSBuild Targets="Make" Projects="ControleDeAcesso.dproj"/>
+		</Target>
+		<Target Name="ControleDeAcessoTests">
+			<MSBuild Projects="Test\ControleDeAcessoTests.dproj"/>
+		</Target>
+		<Target Name="ControleDeAcessoTests:Clean">
+			<MSBuild Targets="Clean" Projects="Test\ControleDeAcessoTests.dproj"/>
+		</Target>
+		<Target Name="ControleDeAcessoTests:Make">
+			<MSBuild Targets="Make" Projects="Test\ControleDeAcessoTests.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="ControleDeAcesso;ControleDeAcessoTests"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="ControleDeAcesso:Clean;ControleDeAcessoTests:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="ControleDeAcesso:Make;ControleDeAcessoTests:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

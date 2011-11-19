@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/11/05 14:54:27.291.pas,D:\Meus documentos\RAD Studio\Projects\Unit1.pas=D:\Meus documentos\Curso Delphi\Atualiza NFe\UFrmPrincipal.pas</Transaction>
+    <Transaction>2011/11/05 14:54:27.291.dfm,D:\Meus documentos\RAD Studio\Projects\Unit1.dfm=D:\Meus documentos\Curso Delphi\Atualiza NFe\UFrmPrincipal.dfm</Transaction>
+    <Transaction>2011/11/05 14:54:53.521.dproj,D:\Meus documentos\RAD Studio\Projects\Project1.dproj=D:\Meus documentos\Curso Delphi\Atualiza NFe\AtualizaNFe.dproj</Transaction>
+    <Transaction>2011/11/05 14:58:32.425.pas,D:\Meus documentos\Curso Delphi\Atualiza NFe\Unit1.pas=D:\Meus documentos\Curso Delphi\Atualiza NFe\Arquivo INI\UArquivoIni.pas</Transaction>
+  </Transactions>
+</BorlandProject>
