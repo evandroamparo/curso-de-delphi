@@ -14,7 +14,10 @@ uses
   UFrmConsultaPlanoContas in 'Plano Contas\UFrmConsultaPlanoContas.pas' {FrmConsultaPlanoContas},
   UFrmCadastroPlanoContas in 'Plano Contas\UFrmCadastroPlanoContas.pas' {FrmCadastroPlanoContas},
   UConstantes in 'Util\UConstantes.pas',
-  UDBUtils in 'Util\UDBUtils.pas';
+  UDBUtils in 'Util\UDBUtils.pas',
+  UFrmConsultaClientes in 'Clientes\UFrmConsultaClientes.pas' {FrmConsultaClientes},
+  RegExpr in 'Util\RegExpr.pas',
+  UFrmCadastroCliente in 'Clientes\UFrmCadastroCliente.pas' {FrmCadastroCliente};
 
 {$R *.res}
 
