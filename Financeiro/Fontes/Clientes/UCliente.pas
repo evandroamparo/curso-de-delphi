@@ -39,7 +39,7 @@ uses Generics.Collections, UntAcessoDados;
 implementation
 
 uses
-  SysUtils, DB, SQLExpr, UDBUtils;
+  SysUtils, DB, SQLExpr, UDBUtils, RegExpr;
 
 class function TCliente.Alterar(Cliente: TCliente): Boolean;
 var
@@ -86,7 +86,7 @@ var
 begin
   Try
     Procedimento := FAcessoDados.NovoProcedimento;
-    Procedimento.StoredProcName := 'INSERIRCLIENTE';
+    Procedimento.StoredProcName := 'PROCINSERIRCLIENTE';
     Procedimento.ParamByName('INRAZAOSOCIAL').AsString := Cliente.RazaoSocial;
     Procedimento.ParamByName('INENDERECO').AsString := Cliente.Endereco;
     Procedimento.ParamByName('INEMAIL').AsString := Cliente.Email;
@@ -107,9 +107,9 @@ begin
   Lista := TList<TCliente>.Create;
 
   //Executo a Consulta que recupera os valores no banco.
-  Consulta := FAcessoDados.ExecutaConsulta('select * from clientes order by razaosocial');
+  Consulta := FAcessoDados.ExecutaConsulta('select * from cliente order by razaosocial');
 
-  while Consulta.Eof do begin//Executa enquanto não chegar ao fim dos dados da consulta.
+  while not Consulta.Eof do begin//Executa enquanto não chegar ao fim dos dados da consulta.
     Cliente := TCliente.Create;//Cria o Objeto.
     Cliente.Codigo := Consulta.FieldByName('CODIGOCLIENTE').AsInteger;//Adiciona ao objeto.
     Cliente.RazaoSocial := Consulta.FieldByName('RAZAOSOCIAL').AsString;//Adiciona ao objeto.
@@ -146,7 +146,21 @@ begin
 end;
 
 procedure TCliente.SetEmail(const Value: String);
+var
+  ExpRegular : TRegExpr;
+  const ExpEmail = '[A-Za-z0-9\._-]+@[A-Za-z]+\.[A-Za-z\.]+';
 begin
+  if Value <> '' then begin
+    try
+      ExpRegular := TRegExpr.Create;
+      ExpRegular.Expression := ExpEmail;
+      if ExpRegular.Exec(Value) = false then begin
+        raise Exception.Create('O e-mail informado é inválido.'); //Sai do método por conta do Finally (Exception)
+      end;
+    finally
+      ExpRegular.Free;
+    end;
+  end;
   FEmail := Value;
 end;
 
@@ -157,6 +171,8 @@ end;
 
 procedure TCliente.SetRazaoSocial(const Value: String);
 begin
+//  StringReplace(value, '''', '', [rfReplaceAll, rfIgnoreCase]);
+
   FRazaoSocial := Value;
 end;
 

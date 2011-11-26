@@ -19,7 +19,9 @@ type
     MainMenu1: TMainMenu;
     Cadastros1: TMenuItem;
     PlanodeContas1: TMenuItem;
+    Clientes1: TMenuItem;
     procedure ActPlanoContasExecute(Sender: TObject);
+    procedure ActClientesExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,9 +33,20 @@ var
 
 implementation
 
-uses UFrmConsultaPlanoContas;
+uses UFrmConsultaPlanoContas, UFrmConsultaClientes;
 
 {$R *.dfm}
+
+procedure TForm1.ActClientesExecute(Sender: TObject);
+begin
+  try
+    //Cria o formulário em tempo de execução. (Classe, objeto form).
+    Application.CreateForm(TFrmConsultaClientes, FrmConsultaClientes);
+    FrmConsultaClientes.ShowModal;
+  finally
+    FrmConsultaClientes.Free;
+  end;
+end;
 
 procedure TForm1.ActPlanoContasExecute(Sender: TObject);
 begin

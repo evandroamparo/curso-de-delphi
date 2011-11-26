@@ -23,5 +23,7 @@
     <Transaction>2011/10/29 15:35:10.561.dfm,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\UFrmCadastroPlanoContas.dfm=</Transaction>
     <Transaction>2011/11/12 14:22:43.190.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit1.pas=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Util\UConstantes.pas</Transaction>
     <Transaction>2011/11/12 14:27:22.622.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit1.pas=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Util\UDBUtils.pas</Transaction>
+    <Transaction>2011/11/26 15:45:51.964.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit2.pas=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Clientes\UFrmCadastroCliente.pas</Transaction>
+    <Transaction>2011/11/26 15:45:51.964.dfm,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit2.dfm=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Clientes\UFrmCadastroCliente.dfm</Transaction>
   </Transactions>
 </BorlandProject>
