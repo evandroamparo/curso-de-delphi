@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Grids, ActnList, PlatformDefaultStyleActnCtrls, ActnMan, ToolWin,
-  ActnCtrls, Generics.Collections, UntAcessoDados;
+  ActnCtrls, Generics.Collections, UntAcessoDados, Menus;
 
 type
   TFrmConsultaPlanoContas = class(TForm)
@@ -30,7 +30,7 @@ var
 
 implementation
 
-uses UPlanoContas, UFrmCadastroPlanoContas , UConstantes;
+uses UPlanoContas, UFrmCadastroPlanoContas , UConstantes, UntDMImagens;
 
 {$R *.dfm}
 

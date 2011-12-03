@@ -39,7 +39,7 @@ uses Generics.Collections, UntAcessoDados;
 implementation
 
 uses
-  SysUtils, DB, SQLExpr, UDBUtils, RegExpr;
+  SysUtils, DB, SQLExpr, UDBUtils, RegExpr, UConstantes;
 
 class function TCliente.Alterar(Cliente: TCliente): Boolean;
 var
@@ -171,9 +171,8 @@ end;
 
 procedure TCliente.SetRazaoSocial(const Value: String);
 begin
-//  StringReplace(value, '''', '', [rfReplaceAll, rfIgnoreCase]);
-
-  FRazaoSocial := Value;
+   if Value = '' then raise Exception.Create (MSG_RAZAO_SOCIAL_VAZIO);
+   FRazaoSocial := Value;
 end;
 
 end.

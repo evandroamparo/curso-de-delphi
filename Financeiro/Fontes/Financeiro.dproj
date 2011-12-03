@@ -69,6 +69,13 @@
 			<DCCReference Include="Clientes\UFrmCadastroCliente.pas">
 				<Form>FrmCadastroCliente</Form>
 			</DCCReference>
+			<DCCReference Include="Fornecedores\UFrmConsultaFornecedor.pas">
+				<Form>FrmConsultaFornecedores</Form>
+			</DCCReference>
+			<DCCReference Include="UntDMImagens.pas">
+				<Form>DataModule1</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
@@ -122,6 +129,9 @@
 						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
+					<Language>
+						<Language Name="RootDir">D:\Meus documentos\Curso Delphi\Financeiro\Fontes\</Language>
+					</Language>
 				</Delphi.Personality>
 				<ModelSupport>False</ModelSupport>
 			</BorlandProject>
