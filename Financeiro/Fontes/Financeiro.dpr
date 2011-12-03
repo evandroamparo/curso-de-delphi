@@ -17,7 +17,9 @@ uses
   UDBUtils in 'Util\UDBUtils.pas',
   UFrmConsultaClientes in 'Clientes\UFrmConsultaClientes.pas' {FrmConsultaClientes},
   RegExpr in 'Util\RegExpr.pas',
-  UFrmCadastroCliente in 'Clientes\UFrmCadastroCliente.pas' {FrmCadastroCliente};
+  UFrmCadastroCliente in 'Clientes\UFrmCadastroCliente.pas' {FrmCadastroCliente},
+  UFrmConsultaFornecedor in 'Fornecedores\UFrmConsultaFornecedor.pas' {FrmConsultaFornecedores},
+  UntDMImagens in 'UntDMImagens.pas' {DataModule1: TDataModule};
 
 {$R *.res}
 
@@ -25,5 +27,7 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFrmConsultaFornecedores, FrmConsultaFornecedores);
+  Application.CreateForm(TDataModule1, DataModule1);
   Application.Run;
 end.

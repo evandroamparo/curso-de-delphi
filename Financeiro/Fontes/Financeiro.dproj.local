@@ -25,5 +25,9 @@
     <Transaction>2011/11/12 14:27:22.622.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit1.pas=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Util\UDBUtils.pas</Transaction>
     <Transaction>2011/11/26 15:45:51.964.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit2.pas=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Clientes\UFrmCadastroCliente.pas</Transaction>
     <Transaction>2011/11/26 15:45:51.964.dfm,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit2.dfm=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Clientes\UFrmCadastroCliente.dfm</Transaction>
+    <Transaction>2011/12/03 12:06:40.083.pas,C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Unit2.pas=C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Fornecedores\UFrmConsultaFornecedor.pas</Transaction>
+    <Transaction>2011/12/03 12:06:40.083.dfm,C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Unit2.dfm=C:\Users\Usuario\Documents\My Dropbox\Curso Delphi\Financeiro\Fontes\Fornecedores\UFrmConsultaFornecedor.dfm</Transaction>
+    <Transaction>2011/12/03 15:40:14.357.pas,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit1.pas=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\UntDMImagens.pas</Transaction>
+    <Transaction>2011/12/03 15:40:14.357.dfm,D:\Meus documentos\Curso Delphi\Financeiro\Fontes\Unit1.dfm=D:\Meus documentos\Curso Delphi\Financeiro\Fontes\UntDMImagens.dfm</Transaction>
   </Transactions>
 </BorlandProject>

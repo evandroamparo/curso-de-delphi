@@ -35,7 +35,7 @@ implementation
 
 { TFornecedor }
 uses
-  SysUtils, DB, SqlExpr;
+  SysUtils, DB, SqlExpr, RegExpr, UConstantes;
 class function TFornecedor.Alterar(Fornecedor: TFornecedor): Boolean;
 var
   Procedimento : TSQLStoredProc;
@@ -133,7 +133,21 @@ begin
 end;
 
 procedure TFornecedor.SetEmail(const Value: string);
+var
+  ExpRegular : TRegExpr;
+  const ExpEmail = '[A-Za-z0-9\._-]+@[A-Za-z]+\.[A-Za-z\.]+';
 begin
+  if Value <> '' then begin
+    try
+      ExpRegular := TRegExpr.Create;
+      ExpRegular.Expression := ExpEmail;
+      if ExpRegular.Exec(Value) = false then begin
+        raise Exception.Create('O e-mail informado é inválido.'); //Sai do método por conta do Finally (Exception)
+      end;
+    finally
+      ExpRegular.Free;
+    end;
+  end;
   FEmail := Value;
 end;
 
@@ -144,7 +158,8 @@ end;
 
 procedure TFornecedor.SetRazaoSocial(const Value: string);
 begin
-  FRazaoSocial := Value;
+   if Value = '' then raise exception.Create(MSG_RAZAO_SOCIAL_VAZIO);
+   FRazaoSocial := Value;
 end;
 
 end.

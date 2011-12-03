@@ -5,7 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ActnList, PlatformDefaultStyleActnCtrls, ActnMan, ToolWin, ActnCtrls,
-  ActnMenus, Menus, WideStrings, DB, SqlExpr, DBXInterbase;
+  ActnMenus, Menus, WideStrings, DB, SqlExpr, DBXInterbase, StdCtrls;
 
 type
   TForm1 = class(TForm)
