@@ -43,6 +43,7 @@ object Form1: TForm1
     object ActFornecedores: TAction
       Category = 'Cadastros'
       Caption = 'Fornecedores'
+      OnExecute = ActFornecedoresExecute
     end
     object ActMovimentacoes: TAction
       Category = 'Cadastros'
@@ -59,6 +60,9 @@ object Form1: TForm1
       end
       object Clientes1: TMenuItem
         Action = ActClientes
+      end
+      object Fornecedores1: TMenuItem
+        Action = ActFornecedores
       end
     end
   end

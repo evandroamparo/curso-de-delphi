@@ -18,8 +18,9 @@ uses
   UFrmConsultaClientes in 'Clientes\UFrmConsultaClientes.pas' {FrmConsultaClientes},
   RegExpr in 'Util\RegExpr.pas',
   UFrmCadastroCliente in 'Clientes\UFrmCadastroCliente.pas' {FrmCadastroCliente},
-  UFrmConsultaFornecedor in 'Fornecedores\UFrmConsultaFornecedor.pas' {FrmConsultaFornecedores},
-  UntDMImagens in 'UntDMImagens.pas' {DataModule1: TDataModule};
+  UFrmConsultaFornecedores in 'Fornecedores\UFrmConsultaFornecedores.pas' {FrmConsultaFornecedores},
+  UntDMImagens in 'UntDMImagens.pas' {DataModule1: TDataModule},
+  UFrmCadastroFornecedor in 'Fornecedores\UFrmCadastroFornecedor.pas' {FrmCadastroFornecedor};
 
 {$R *.res}
 
@@ -29,5 +30,6 @@ begin
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TFrmConsultaFornecedores, FrmConsultaFornecedores);
   Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TFrmCadastroFornecedor, FrmCadastroFornecedor);
   Application.Run;
 end.

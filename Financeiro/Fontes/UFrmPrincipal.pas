@@ -20,8 +20,10 @@ type
     Cadastros1: TMenuItem;
     PlanodeContas1: TMenuItem;
     Clientes1: TMenuItem;
+    Fornecedores1: TMenuItem;
     procedure ActPlanoContasExecute(Sender: TObject);
     procedure ActClientesExecute(Sender: TObject);
+    procedure ActFornecedoresExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,7 +35,7 @@ var
 
 implementation
 
-uses UFrmConsultaPlanoContas, UFrmConsultaClientes;
+uses UFrmConsultaPlanoContas, UFrmConsultaClientes, UFrmConsultaFornecedores;
 
 {$R *.dfm}
 
@@ -45,6 +47,16 @@ begin
     FrmConsultaClientes.ShowModal;
   finally
     FrmConsultaClientes.Free;
+  end;
+end;
+
+procedure TForm1.ActFornecedoresExecute(Sender: TObject);
+begin
+  try
+    Application.CreateForm(TFrmConsultaFornecedores, FrmConsultaFornecedores);
+    FrmConsultaFornecedores.ShowModal;
+  finally
+    FrmConsultaFornecedores.Free;
   end;
 end;
 
