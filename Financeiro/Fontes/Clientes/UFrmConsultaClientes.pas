@@ -30,7 +30,7 @@ var
 
 implementation
 
-uses UCliente, UFrmCadastroCliente, UConstantes;
+uses UCliente, UFrmCadastroCliente, UConstantes, UntDMImagens;
 
 {$R *.dfm}
 

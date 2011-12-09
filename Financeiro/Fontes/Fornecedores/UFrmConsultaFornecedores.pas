@@ -16,6 +16,9 @@ type
     ActExcluir: TAction;
     StgFornecedores: TStringGrid;
     procedure FormShow(Sender: TObject);
+    procedure ActIncluirExecute(Sender: TObject);
+    procedure ActAlterarExecute(Sender: TObject);
+    procedure ActExcluirExecute(Sender: TObject);
   private
    procedure AtualizaGrid;
   public
@@ -27,9 +30,67 @@ var
 
 implementation
 
-uses UFornecedor, UntDMImagens;
+uses UFornecedor, UntDMImagens, UFrmCadastroFornecedor, UConstantes;
 
 {$R *.dfm}
+
+procedure TFrmConsultaFornecedores.ActAlterarExecute(Sender: TObject);
+var
+  Fornecedor : TFornecedor;
+begin
+  Fornecedor := TFornecedor(StgFornecedores.Objects[0, StgFornecedores.Row]);
+  if Fornecedor = nil then exit;
+  FrmCadastroFornecedor := TFrmCadastroFornecedor.Create(Self);
+  try
+    FrmCadastroFornecedor.Fornecedor := Fornecedor;
+    if FrmCadastroFornecedor.ShowModal = mrOk then begin
+      if TFornecedor.Alterar(FrmCadastroFornecedor.Fornecedor) then begin
+        AtualizaGrid
+      end
+      else begin
+        Application.MessageBox(MSG_ERRO_ALTCADASTRO, NOME_SISTEMA);
+      end;
+    end;
+  Except
+    on e: Exception do begin
+      Application.MessageBox(PWideChar(e.Message), NOME_SISTEMA);
+    end;
+  end;
+
+end;
+
+procedure TFrmConsultaFornecedores.ActExcluirExecute(Sender: TObject);
+var
+  Fornecedor : TFornecedor;
+begin
+  Fornecedor := TFornecedor(StgFornecedores.Objects[0,StgFornecedores.Row]);
+  if Fornecedor = nil then Exit;
+  if Application.MessageBox(MSG_EXCLUSAO, NOME_SISTEMA, MB_YESNO + MB_DEFBUTTON2) = IDYES then begin
+    if TFornecedor.Excluir(Fornecedor.Codigo) then begin
+      AtualizaGrid;
+    end
+    Else begin
+      Application.MessageBox(MSG_ERRO_EXCCADASTRO, NOME_SISTEMA);
+    end;
+  end;
+end;
+
+procedure TFrmConsultaFornecedores.ActIncluirExecute(Sender: TObject);
+begin
+  FrmCadastroFornecedor := TFrmCadastroFornecedor.Create(Self);
+  try
+    if FrmCadastroFornecedor.ShowModal = mrOk then begin
+      if TFornecedor.Inserir(FrmCadastroFornecedor.Fornecedor) then begin
+          AtualizaGrid;
+      end
+      else begin
+        Application.MessageBox(MSG_ERRO_INCCADASTRO, NOME_SISTEMA);
+      end;
+    end;
+  finally
+    FrmCadastroFornecedor.Free;
+  end;
+end;
 
 procedure TFrmConsultaFornecedores.AtualizaGrid;
 var
