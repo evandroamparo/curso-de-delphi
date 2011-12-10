@@ -79,6 +79,12 @@
 			<DCCReference Include="Fornecedores\UFrmCadastroFornecedor.pas">
 				<Form>FrmCadastroFornecedor</Form>
 			</DCCReference>
+			<DCCReference Include="Contas\UFrmConsultaContasPagar.pas">
+				<Form>FrmConsultaContasPagar</Form>
+			</DCCReference>
+			<DCCReference Include="Contas\UFrmCadastroContaPagar.pas">
+				<Form>Form2</Form>
+			</DCCReference>
 			<BuildConfiguration Include="Base">
 				<Key>Base</Key>
 			</BuildConfiguration>
@@ -132,9 +138,6 @@
 						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
 						<VersionInfoKeys Name="Comments"/>
 					</VersionInfoKeys>
-					<Language>
-						<Language Name="RootDir">Z:\D\Estudos Delphi\Financeiro\Fontes\</Language>
-					</Language>
 				</Delphi.Personality>
 				<ModelSupport>False</ModelSupport>
 			</BorlandProject>
