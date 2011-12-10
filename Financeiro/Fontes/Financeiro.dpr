@@ -20,7 +20,9 @@ uses
   UFrmCadastroCliente in 'Clientes\UFrmCadastroCliente.pas' {FrmCadastroCliente},
   UFrmConsultaFornecedores in 'Fornecedores\UFrmConsultaFornecedores.pas' {FrmConsultaFornecedores},
   UntDMImagens in 'UntDMImagens.pas' {DataModule1: TDataModule},
-  UFrmCadastroFornecedor in 'Fornecedores\UFrmCadastroFornecedor.pas' {FrmCadastroFornecedor};
+  UFrmCadastroFornecedor in 'Fornecedores\UFrmCadastroFornecedor.pas' {FrmCadastroFornecedor},
+  UFrmConsultaContasPagar in 'Contas\UFrmConsultaContasPagar.pas' {FrmConsultaContasPagar},
+  UFrmCadastroContaPagar in 'Contas\UFrmCadastroContaPagar.pas' {Form2};
 
 {$R *.res}
 
@@ -28,8 +30,6 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TFrmConsultaFornecedores, FrmConsultaFornecedores);
-  Application.CreateForm(TDataModule1, DataModule1);
-  Application.CreateForm(TFrmCadastroFornecedor, FrmCadastroFornecedor);
+  Application.CreateForm(TForm2, Form2);
   Application.Run;
 end.

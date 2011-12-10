@@ -1,9 +1,9 @@
-object FrmConsultaClientes: TFrmConsultaClientes
+object FrmConsultaContasPagar: TFrmConsultaContasPagar
   Left = 0
   Top = 0
-  Caption = 'FrmConsultaClientes'
-  ClientHeight = 454
-  ClientWidth = 747
+  Caption = 'FrmConsultaContasPagar'
+  ClientHeight = 382
+  ClientWidth = 701
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,7 +17,7 @@ object FrmConsultaClientes: TFrmConsultaClientes
   object ActionToolBar1: TActionToolBar
     Left = 0
     Top = 0
-    Width = 747
+    Width = 701
     Height = 42
     ActionManager = ActionManager1
     Caption = 'ActionToolBar1'
@@ -32,30 +32,36 @@ object FrmConsultaClientes: TFrmConsultaClientes
     ParentFont = False
     Spacing = 0
   end
-  object StgClientes: TStringGrid
+  object StgContasPagar: TStringGrid
     Left = 0
     Top = 42
-    Width = 747
-    Height = 412
+    Width = 701
+    Height = 340
     Align = alClient
-    ColCount = 4
+    ColCount = 7
     FixedCols = 0
     RowCount = 2
-    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSelect]
     TabOrder = 1
+    ExplicitLeft = 56
+    ExplicitTop = 120
+    ExplicitWidth = 320
+    ExplicitHeight = 120
     ColWidths = (
-      72
-      263
-      170
-      204)
+      64
+      64
+      64
+      64
+      64
+      64
+      64)
   end
   object ActionManager1: TActionManager
     ActionBars = <
       item
         Items = <
           item
-            Action = ActIncluir
-            Caption = '&Incluir'
+            Action = ActInserir
+            Caption = '&Inserir'
             ImageIndex = 0
           end
           item
@@ -72,22 +78,19 @@ object FrmConsultaClientes: TFrmConsultaClientes
       end>
     Images = DataModule1.ILstAcoes
     Left = 48
-    Top = 384
+    Top = 312
     StyleName = 'Platform Default'
-    object ActIncluir: TAction
-      Caption = 'Incluir'
+    object ActInserir: TAction
+      Caption = 'Inserir'
       ImageIndex = 0
-      OnExecute = ActIncluirExecute
     end
     object ActAlterar: TAction
       Caption = 'Alterar'
       ImageIndex = 1
-      OnExecute = ActAlterarExecute
     end
     object ActExcluir: TAction
       Caption = 'Excluir'
       ImageIndex = 2
-      OnExecute = ActExcluirExecute
     end
   end
 end

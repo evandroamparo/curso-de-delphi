@@ -50,7 +50,7 @@ end;
 constructor TContaPagar.Create;
 begin
   inherited;
-    FAcessoDados := TAcessoDados.Create(TDBUtils.CaminhoBanco);
+  FAcessoDados := TAcessoDados.Create(TDBUtils.CaminhoBanco);
 end;
 
 class function TContaPagar.Excluir(Codigo: integer): Boolean;

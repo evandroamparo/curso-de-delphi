@@ -5,7 +5,7 @@ interface
 uses Generics.Collections, UntAcessoDados, UPlanoContas;
 
   Type
-    TConta = class
+    TConta = class abstract
   private
     FValorTitulo: Double;
     FDescricao: string;
