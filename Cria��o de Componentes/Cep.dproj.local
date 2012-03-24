@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/03/24 15:06:03.870.pas,D:\Meus documentos\RAD Studio\Projects\Unit1.pas=D:\Meus documentos\Curso Delphi\Criação de Componentes\UntEndereco.pas</Transaction>
+    <Transaction>2012/03/24 15:06:20.955.dproj,D:\Meus documentos\RAD Studio\Projects\Package1.dproj=D:\Meus documentos\Curso Delphi\Criação de Componentes\Cep.dproj</Transaction>
+    <Transaction>2012/03/24 15:11:48.110.pas,D:\Meus documentos\Curso Delphi\Criação de Componentes\Unit1.pas=D:\Meus documentos\Curso Delphi\Criação de Componentes\UntIServicoCep.pas</Transaction>
+    <Transaction>2012/03/24 15:32:52.703.pas,D:\Meus documentos\Curso Delphi\Criação de Componentes\Unit1.pas=D:\Meus documentos\Curso Delphi\Criação de Componentes\UntServicoCep.pas</Transaction>
+    <Transaction>2012/03/24 15:33:26.193.pas,D:\Meus documentos\Curso Delphi\Criação de Componentes\cep.pas=D:\Meus documentos\Curso Delphi\Criação de Componentes\WebServiceCep.pas</Transaction>
+  </Transactions>
+</BorlandProject>
