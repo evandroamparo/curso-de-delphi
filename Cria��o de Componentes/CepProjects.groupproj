@@ -1,0 +1,48 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{E08B48D5-76CB-4888-BB37-FF1FDABAED4F}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="Cep.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CepTest\CepDemo.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="Cep">
+			<MSBuild Projects="Cep.dproj"/>
+		</Target>
+		<Target Name="Cep:Clean">
+			<MSBuild Targets="Clean" Projects="Cep.dproj"/>
+		</Target>
+		<Target Name="Cep:Make">
+			<MSBuild Targets="Make" Projects="Cep.dproj"/>
+		</Target>
+		<Target Name="CepDemo">
+			<MSBuild Projects="CepTest\CepDemo.dproj"/>
+		</Target>
+		<Target Name="CepDemo:Clean">
+			<MSBuild Targets="Clean" Projects="CepTest\CepDemo.dproj"/>
+		</Target>
+		<Target Name="CepDemo:Make">
+			<MSBuild Targets="Make" Projects="CepTest\CepDemo.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="Cep;CepDemo"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="Cep:Clean;CepDemo:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="Cep:Make;CepDemo:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>

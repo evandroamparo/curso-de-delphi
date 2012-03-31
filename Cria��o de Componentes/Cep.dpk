@@ -25,12 +25,17 @@ package Cep;
 {$IMPLICITBUILD ON}
 
 requires
-  rtl;
+  rtl,
+  xmlrtl,
+  soaprtl,
+  inet,
+  dbrtl;
 
 contains
   UntEndereco in 'UntEndereco.pas',
   UntIServicoCep in 'UntIServicoCep.pas',
   UntServicoCep in 'UntServicoCep.pas',
-  WebServiceCep in 'WebServiceCep.pas';
+  WebServiceCep in 'WebServiceCep.pas',
+  RegExpr in 'RegExpr.pas';
 
 end.
