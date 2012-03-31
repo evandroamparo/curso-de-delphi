@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2012/03/31 15:48:16.630.pas,D:\Meus documentos\RAD Studio\Projects\Unit1.pas=D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\CepDemo.pas</Transaction>
+    <Transaction>2012/03/31 15:48:16.630.dfm,D:\Meus documentos\RAD Studio\Projects\Unit1.dfm=D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\CepDemo.dfm</Transaction>
+    <Transaction>2012/03/31 15:48:57.080.pas,D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\CepDemo.pas=</Transaction>
+    <Transaction>2012/03/31 15:48:57.080.dfm,D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\CepDemo.dfm=</Transaction>
+    <Transaction>2012/03/31 15:49:14.873.dproj,D:\Meus documentos\RAD Studio\Projects\Project1.dproj=D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\CepDemo.dproj</Transaction>
+    <Transaction>2012/03/31 15:50:11.491.pas,D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\CepDemo.pas=D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\UntEndereco.pas</Transaction>
+    <Transaction>2012/03/31 15:50:11.491.dfm,D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\CepDemo.dfm=D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\UntEndereco.dfm</Transaction>
+    <Transaction>2012/03/31 15:51:40.944.pas,D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\UntEndereco.pas=D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\UntFrmPrincipal.pas</Transaction>
+    <Transaction>2012/03/31 15:51:40.944.dfm,D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\UntEndereco.dfm=D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\UntFrmPrincipal.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
