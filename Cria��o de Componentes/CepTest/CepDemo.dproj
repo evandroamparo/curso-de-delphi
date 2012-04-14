@@ -20,7 +20,7 @@
 			<Base>true</Base>
 		</PropertyGroup>
 		<PropertyGroup Condition="'$(Base)'!=''">
-			<DCC_UsePackage>Cep</DCC_UsePackage>
+			<DCC_UsePackage>Cep2009</DCC_UsePackage>
 			<UsePackages>true</UsePackages>
 			<DCC_DependencyCheckOutputName>CepDemo.exe</DCC_DependencyCheckOutputName>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
@@ -105,6 +105,9 @@
 					<Source>
 						<Source Name="MainSource">CepDemo.dpr</Source>
 					</Source>
+					<Language>
+						<Language Name="RootDir">D:\Meus documentos\Curso Delphi\Criação de Componentes\CepTest\</Language>
+					</Language>
 				</Delphi.Personality>
 			</BorlandProject>
 			<ProjectFileVersion>12</ProjectFileVersion>

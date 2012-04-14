@@ -3,7 +3,7 @@
 			<ProjectGuid>{E08B48D5-76CB-4888-BB37-FF1FDABAED4F}</ProjectGuid>
 		</PropertyGroup>
 		<ItemGroup>
-			<Projects Include="Cep.dproj">
+			<Projects Include="Cep2009.dproj">
 				<Dependencies/>
 			</Projects>
 			<Projects Include="CepTest\CepDemo.dproj">
@@ -17,14 +17,14 @@
 				<Default.Personality/>
 			</BorlandProject>
 		</ProjectExtensions>
-		<Target Name="Cep">
-			<MSBuild Projects="Cep.dproj"/>
+		<Target Name="Cep2009">
+			<MSBuild Projects="Cep2009.dproj"/>
 		</Target>
-		<Target Name="Cep:Clean">
-			<MSBuild Targets="Clean" Projects="Cep.dproj"/>
+		<Target Name="Cep2009:Clean">
+			<MSBuild Targets="Clean" Projects="Cep2009.dproj"/>
 		</Target>
-		<Target Name="Cep:Make">
-			<MSBuild Targets="Make" Projects="Cep.dproj"/>
+		<Target Name="Cep2009:Make">
+			<MSBuild Targets="Make" Projects="Cep2009.dproj"/>
 		</Target>
 		<Target Name="CepDemo">
 			<MSBuild Projects="CepTest\CepDemo.dproj"/>
@@ -36,13 +36,13 @@
 			<MSBuild Targets="Make" Projects="CepTest\CepDemo.dproj"/>
 		</Target>
 		<Target Name="Build">
-			<CallTarget Targets="Cep;CepDemo"/>
+			<CallTarget Targets="Cep2009;CepDemo"/>
 		</Target>
 		<Target Name="Clean">
-			<CallTarget Targets="Cep:Clean;CepDemo:Clean"/>
+			<CallTarget Targets="Cep2009:Clean;CepDemo:Clean"/>
 		</Target>
 		<Target Name="Make">
-			<CallTarget Targets="Cep:Make;CepDemo:Make"/>
+			<CallTarget Targets="Cep2009:Make;CepDemo:Make"/>
 		</Target>
 		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 	</Project>
