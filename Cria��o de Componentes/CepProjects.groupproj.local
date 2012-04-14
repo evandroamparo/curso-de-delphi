@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
+	<Transactions>
     <Transaction>2012/03/31 15:42:33.252.groupproj,D:\Meus documentos\RAD Studio\Projects\ProjectGroup1.groupproj=D:\Meus documentos\Curso Delphi\Criação de Componentes\CepProjects.groupproj</Transaction>
   </Transactions>
-  <Default.Personality>
-    <Projects ActiveProject="CepDemo.exe"/>
-  </Default.Personality>
+	<Default.Personality>
+		<Projects ActiveProject="CepDemo.exe"/>
+	</Default.Personality>
 </BorlandProject>
