@@ -44,7 +44,7 @@ begin
   ServicoCep := TServicoCep.Create('leandrobelge', '88030696');
   try
     try
-      Endereco.Cep := '';//MskCep.Text;
+      Endereco.Cep := MskCep.Text;
       Endereco.TipoLogradouro := EdtTipoLogradouro.Text;
       Endereco.Logradouro := EdtLogradouro.Text;
       Endereco.Bairro := EdtBairro.Text;

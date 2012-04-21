@@ -5,7 +5,7 @@
 //  >Import : http://www.byjg.com.br/site/webservice.php/ws/cep?WSDL>0
 // Encoding : utf-8
 // Version  : 1.0
-// (24/03/2012 15:26:56 - - $Rev: 16699 $)
+// (21/04/2012 14:22:52 - - $Rev: 16699 $)
 // ************************************************************************ //
 
 unit WebServiceCep;

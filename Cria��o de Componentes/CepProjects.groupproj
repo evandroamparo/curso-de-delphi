@@ -7,7 +7,7 @@
 				<Dependencies/>
 			</Projects>
 			<Projects Include="CepTest\CepDemo.dproj">
-				<Dependencies/>
+				<Dependencies>Cep2009.dproj</Dependencies>
 			</Projects>
 		</ItemGroup>
 		<ProjectExtensions>
@@ -26,13 +26,13 @@
 		<Target Name="Cep2009:Make">
 			<MSBuild Targets="Make" Projects="Cep2009.dproj"/>
 		</Target>
-		<Target Name="CepDemo">
+		<Target DependsOnTargets="Cep2009" Name="CepDemo">
 			<MSBuild Projects="CepTest\CepDemo.dproj"/>
 		</Target>
-		<Target Name="CepDemo:Clean">
+		<Target DependsOnTargets="Cep2009:Clean" Name="CepDemo:Clean">
 			<MSBuild Targets="Clean" Projects="CepTest\CepDemo.dproj"/>
 		</Target>
-		<Target Name="CepDemo:Make">
+		<Target DependsOnTargets="Cep2009:Make" Name="CepDemo:Make">
 			<MSBuild Targets="Make" Projects="CepTest\CepDemo.dproj"/>
 		</Target>
 		<Target Name="Build">
