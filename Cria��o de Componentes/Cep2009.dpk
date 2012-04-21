@@ -35,7 +35,7 @@ contains
   UntEndereco in 'UntEndereco.pas',
   UntIServicoCep in 'UntIServicoCep.pas',
   UntServicoCep in 'UntServicoCep.pas',
-  WebServiceCep in 'WebServiceCep.pas',
-  RegExpr in 'RegExpr.pas';
+  RegExpr in 'RegExpr.pas',
+  WebServiceCep in 'WebServiceCep.pas';
 
 end.

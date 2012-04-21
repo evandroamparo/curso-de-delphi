@@ -58,9 +58,9 @@ object Form1: TForm1
   object MskCep: TMaskEdit
     Left = 104
     Top = 24
-    Width = 118
+    Width = 116
     Height = 21
-    EditMask = '00000\-999;0; '
+    EditMask = '99999\-999;0; '
     MaxLength = 9
     TabOrder = 0
   end

@@ -11,6 +11,7 @@ type
     private
       FLogin: string;
       FSenha: string;
+
       procedure ExtraiEndereco (var Endereco: TEndereco; DadosEndereco: string); overload;
       procedure ExtraiEndereco (var Endereco: TEndereco; DadosEndereco: array of string); overload;
   end;
@@ -25,16 +26,23 @@ uses WebServiceCep, RegExpr;
 function TServicoCep.ConsultaCep(var Endereco: TEndereco): Boolean;
 var
   Servico: CEPServicePort;
+  arquivo: TextFile;
+  retorno: string;
 begin
   if Endereco <> nil then begin
     Servico := GetCEPServicePort();
     try
       if Endereco.Cep <> '' then begin
-        ExtraiEndereco(Endereco, Servico.obterLogradouroAuth(Endereco.Cep, FLogin, FSenha));
+        retorno := Servico.obterLogradouroAuth(Endereco.Cep, FLogin, FSenha);
       end
       else
-        ExtraiEndereco(Endereco, Servico.obterCEPAuth(Endereco.Logradouro, Endereco.Localidade,
-                                                      Endereco.Estado, FLogin, FSenha));
+        retorno := Servico.obterCEPAuth(Endereco.Logradouro, Endereco.Localidade,
+                                                      Endereco.Estado, FLogin, FSenha)[0];
+      assignfile(arquivo, 'log.txt');
+      rewrite(arquivo);
+      writeln(arquivo, retorno);
+      closefile(arquivo);
+      ExtraiEndereco(Endereco, retorno);
       Result := true;
     Except
       Result:= false;
@@ -58,19 +66,23 @@ begin
     ExtraiEndereco(Endereco, DadosEndereco[0]);
 end;
 
+
+
 procedure TServicoCep.ExtraiEndereco(var Endereco: TEndereco; DadosEndereco: string);
 var
   Expressao: TRegExpr;
-  Const ExpressaoRegular : string = '(\d{8}) (?-g)(.*) (.*), (.*), (.*), (?g)(.*)';
+  Const ExpressaoRegular : string = '((\d{8}), )?(?-g)(.*) (.*), (.*), (.*), (?g)(.*), (.*)';
 begin
   Expressao:= TRegExpr.Create;
   Expressao.Expression := ExpressaoRegular;
   if Expressao.Exec(DadosEndereco) then begin
-     Endereco.Cep := Expressao.Match[1];
-     Endereco.TipoLogradouro := Expressao.Match[2];
-     Endereco.Logradouro := Expressao.Match[3];
+     if Expressao.Match[2] <> '' then
+        Endereco.Cep := Expressao.Match[2];
+     Endereco.TipoLogradouro := Expressao.Match[3];
+     Endereco.Logradouro := Expressao.Match[4];
      Endereco.Bairro:= Expressao.Match[5];
      Endereco.Localidade:= Expressao.Match[6];
+     Endereco.Estado := Expressao.Match[7];
   end;
 end;
 
