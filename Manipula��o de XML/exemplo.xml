@@ -1,0 +1,14 @@
+<produtos>
+	<produto>
+		<descricao>Manga</descricao>
+		<valor>10,00</valor>
+		<categoria>hortifrutigranjeiros</categoria>
+		<unidademedida>cx</unidademedida>
+	</produto>
+	<produto>
+		<descricao>Manga</descricao>
+		<valor>10,00</valor>
+		<categoria>hortifrutigranjeiros</categoria>
+		<unidademedida>cx</unidademedida>
+	</produto>
+	<produto><descricao>abobora</descricao><categoria>hortifruti</categoria><unidademedida>cx</unidademedida><valor>25</valor></produto></produtos>
