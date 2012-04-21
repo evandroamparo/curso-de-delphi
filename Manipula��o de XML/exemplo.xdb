@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xdb="http://www.borland.com/schemas/delphi/10.0/XMLDataBinding">
+  <xs:element name="produtos" type="produtosType"/>
+  <xs:complexType name="produtosType"><xs:annotation>
+      <xs:appinfo xdb:docElement="produtos"/>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="produto" type="produtoType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="produtoType">
+    <xs:sequence>
+      <xs:element name="descricao" type="xs:string"/>
+      <xs:element name="valor" type="xs:decimal"><xs:annotation>
+          <xs:appinfo xdb:dataType="Double"/>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="categoria" type="xs:string"/>
+      <xs:element name="unidademedida" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
